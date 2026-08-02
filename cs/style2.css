@@ -44,6 +44,17 @@ section h3 {
     color: #444;
 }
 
+article {
+    text-align: center;
+    display: block;
+}
+
+section h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #444;
+}
+
 footer {
     text-align: center;
     margin-top: 40px;
