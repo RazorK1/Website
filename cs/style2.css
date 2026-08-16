@@ -24,6 +24,11 @@ header h1 {
     font-size: 2rem;
 }
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     max-width: 900px;
     margin: 50px auto;
