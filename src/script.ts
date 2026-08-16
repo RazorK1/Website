@@ -15,8 +15,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navLinks.forEach(link => {
         link.addEventListener("click", (event: MouseEvent) => {
-            event.preventDefault();
+            //event.preventDefault();
             const target = event.currentTarget as HTMLAnchorElement;
+            
+            // Smooth scrolling
+            if (target.hash) {
+                event.preventDefault();
+
+                const section = document.querySelector(target.hash) as HTMLElement | null;
+                if (section) {
+                    section.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            }
+            
             console.log(`Nav clicked: ${target.textContent}`);
         });
     });
