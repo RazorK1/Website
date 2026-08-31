@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Log visitor IP via Cloudflare Worker
-    fetch("https://your-worker.username.workers.dev/log?page=" + window.location.pathname, {
+    fetch("https://iplogger.kharrisalt.workers.dev/log?page=" + window.location.pathname, {
         method: "GET"
     }).catch(err => console.error("Logging failed:", err));
 });
