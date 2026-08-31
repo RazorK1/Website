@@ -35,6 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(`Nav clicked: ${target.textContent}`);
         });
     });
+
+    // Log visitor IP via Cloudflare Worker
+    fetch("https://your-worker.username.workers.dev/log?page=" + window.location.pathname, {
+        method: "GET"
+    }).catch(err => console.error("Logging failed:", err));
 });
 
 function showMessage(msg) {
