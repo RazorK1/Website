@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="css/style3.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>TypeScript Task Manager</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutHtml.html">About</a></li>
+            <li><a href="ContactHtml.html">Contact</a></li>
+            <li><a href="ResumeHtml2.html">Résumé</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="TypeScript2.html">TypeScript</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Task Manager</h2>
+
+            <p>
+                Add tasks, mark them complete, delete them,
+                and save them using Local Storage.
+            </p>
+
+            <div class="task-input-container">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a task..."
+                >
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+            </div>
+
+            <h3>Tasks</h3>
+
+            <ul id="taskList"></ul>
+
+            <div id="stats">
+                <p>Total Tasks: <span id="totalTasks">0</span></p>
+                <p>Completed Tasks: <span id="completedTasks">0</span></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TypeScript Task Manager Project</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
